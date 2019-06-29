@@ -1,0 +1,12 @@
+.env
+
+# Ignore local yml files, as they contain private ECR repos
+*.yml
+
+# Ignore OSM data
+*.osm
+*.osm.pmf
+
+# Hide notes folder, which can be used to store extra instructions
+notes/
+
