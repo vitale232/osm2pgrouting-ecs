@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  osm2pgrouting: &osm2pgrouting
+    build: .
+    image: xxxxxxx.dkr.ecr.us-east-1.amazonaws.com/osm2pgrouting:latest
+    env_file:
+      - ./.env
+    ports:
+      - 80:80
