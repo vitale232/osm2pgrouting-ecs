@@ -5,7 +5,7 @@
 
 # Ignore OSM data
 *.osm
-*.osm.pmf
+*.osm.pbf
 
 # Hide notes folder, which can be used to store extra instructions
 notes/
