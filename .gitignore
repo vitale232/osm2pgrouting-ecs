@@ -1,7 +1,7 @@
-.env
+docer-compose/.env
 
 # Ignore local yml files, as they contain private ECR repos
-*.yml
+docker-compose/*.yml
 
 # Ignore OSM data
 *.osm
