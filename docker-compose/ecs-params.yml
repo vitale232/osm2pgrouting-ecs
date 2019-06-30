@@ -1,0 +1,22 @@
+##### THIS IS AN EXAMPLE. REPLACE xxxxx WITH YOUR SECRETS #####
+
+version: 1
+task_definition:
+  ecs_network_mode: awsvpc
+  task_execution_role: ecsTaskExecutionRole
+  task_size:
+    mem_limit: 30gb
+    cpu_limit: 4vcpu
+  services:
+    osm2pgrouting:
+      mem_limit: 30gb
+      task_size: 4vcpu 
+
+run_params:
+  network_configuration:
+    awsvpc_configuration:
+      subnets: 
+        - subnet-xxxxx
+      security_groups: 
+        - sg-xxxxx # This security group should include the RDS database
+      assign_public_ip: ENABLED
