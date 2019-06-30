@@ -11,3 +11,6 @@
 notes/
 
 gis_data/
+
+*.tar
+*.tar.gz
